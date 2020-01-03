@@ -1,0 +1,10 @@
+red,"Red",#f00,255,0,0
+blue,"Blue",#00f,0,0,255
+green_color_wheel_x11_green,"Green (Color Wheel) (X11 Green)",#0f0,0,255,0
+black,"Black",#000,0,0,0
+white,"White",#fff,255,255,255
+pink,"Pink",#ffc0cb,255,192,203
+purple_html_css,"Purple (Html/Css)",#800080,128,0,128
+yellow,"Yellow",#ff0,255,255,0
+orange_color_wheel,"Orange (Color Wheel)",#ff7f00,255,127,0
+brown_traditional,"Brown (Traditional)",#964b00,150,75,0
