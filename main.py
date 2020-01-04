@@ -1,6 +1,8 @@
 from tkinter import *
 from tkinter.filedialog import askopenfilename
-from extract_audio_from_video import *
+#from extract_audio_from_video import *
+from image_to_color import *
+from color.color_detection import *
 
 
 def open_directory():
@@ -11,7 +13,12 @@ def open_directory():
 
 
 def extract_audio():
-    extract_audio_from_clip(text_url_entry.get(),r"C:\Users\dorlev.BGU-USERS\PycharmProjects\final_project\audios\tmp1.wav")
+    x=4
+    #extract_audio_from_clip(text_url_entry.get(),r"C:\Users\dorlev.BGU-USERS\PycharmProjects\final_project\audios\tmp1.wav")
+
+
+def get_colors():
+    rgb_name(get_colors_names(text_url_entry.get()))
 
 
 ########## GUI ###########
@@ -34,5 +41,8 @@ text_url_entry.grid(row=1, column=1)
 
 extract_audio_button = Button(window, text='Predict', command=extract_audio)
 extract_audio_button.grid(row=2)
+
+color_button = Button(window, text='Color', command=get_colors)
+color_button.grid(row=2, column=1)
 
 window.mainloop()
