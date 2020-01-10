@@ -8,9 +8,11 @@ from color.color_detection import *
 from audios.main_audio import *
 from extract_images_from_video import *
 
+
 def start_predict():
     extract_audio()
     get_colors()
+
 
 def open_directory():
     file_selected = askopenfilename()
@@ -51,8 +53,8 @@ select_video_button.grid(row=1, column=2)
 text_url_entry = Entry(window, width=80)
 text_url_entry.grid(row=1, column=1)
 
-extract_audio_button = Button(window, text='Audio', command=start_predict)
-extract_audio_button.grid(row=2)
+predict_button = Button(window, text='Predict', command=start_predict)
+predict_button.grid(row=2)
 
 color_button = Button(window, text='Color', command=get_colors)
 color_button.grid(row=2, column=1)
