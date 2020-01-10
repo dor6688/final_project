@@ -13,7 +13,7 @@ def start_predict():
     extract_audio()
     get_colors()
 
-
+ 
 def open_directory():
     file_selected = askopenfilename()
     text_url_entry.delete(0, END)
